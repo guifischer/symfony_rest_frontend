@@ -33,7 +33,7 @@ export default function Register() {
   };
 
   const renderErrors = () => {
-    if (errors.length == 0) {
+    if (errors.length === 0) {
       return null;
     }
 

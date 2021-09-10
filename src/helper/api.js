@@ -10,7 +10,7 @@ export const GET = async (url) => {
 
     return response;
   } catch (error) {
-    if (error.response.data != null && error.response.data.message == "API token expired") {
+    if (error.response.data != null && error.response.data.message === "API token expired") {
       alert("Token Expired. Refreshing it...");
       refreshToken();
     }
